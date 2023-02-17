@@ -1,0 +1,23 @@
+# cook your dish here
+
+for _ in range(int(input())):
+    A, B = map(int, input().split())
+    count1=A
+    count2=B
+    m=0
+    k=0
+    for x in range(1000):
+        m=k+1
+        count1-=m
+        if count1<0:
+            print("Bob")
+            break
+        else:
+            k=m+1
+            count2-=k
+            if count2<0:
+                print("Limak")
+                break
+            
+        
+        

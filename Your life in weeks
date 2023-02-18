@@ -1,0 +1,13 @@
+# 🚨 Don't change the code below 👇
+age = input("What is your current age? ")
+# 🚨 Don't change the code above 👆
+
+#Write your code below this line 👇
+days = (90*365)
+weeks = (90*52)
+months = (90*12)
+x=int(age)
+day1 = days-(x*365)
+week1 = weeks-(x*52)
+month1 = months-(x*12)
+print("You have",day1,"days,",week1,"weeks, and",month1,"months left.")

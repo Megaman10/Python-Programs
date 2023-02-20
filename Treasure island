@@ -1,0 +1,58 @@
+print('''
+*******************************************************************************
+          |                   |                  |                     |
+ _________|________________.=""_;=.______________|_____________________|_______
+|                   |  ,-"_,=""     `"=.|                  |
+|___________________|__"=._o`"-._        `"=.______________|___________________
+          |                `"=._o`"=._      _`"=._                     |
+ _________|_____________________:=._o "=._."_.-="'"=.__________________|_______
+|                   |    __.--" , ; `"=._o." ,-"""-._ ".   |
+|___________________|_._"  ,. .` ` `` ,  `"-._"-._   ". '__|___________________
+          |           |o`"=._` , "` `; .". ,  "-._"-._; ;              |
+ _________|___________| ;`-.o`"=._; ." ` '`."\` . "-._ /_______________|_______
+|                   | |o;    `"-.o`"=._``  '` " ,__.--o;   |
+|___________________|_| ;     (#) `-.o `"=.`_.--"_o.-; ;___|___________________
+____/______/______/___|o;._    "      `".o|o_.--"    ;o;____/______/______/____
+/______/______/______/_"=._o--._        ; | ;        ; ;/______/______/______/_
+____/______/______/______/__"=._o--._   ;o|o;     _._;o;____/______/______/____
+/______/______/______/______/____"=._o._; | ;_.--"o.--"_/______/______/______/_
+____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
+/______/______/______/______/______/______/______/______/______/______/_____ /
+*******************************************************************************
+''')
+print("Welcome to Treasure Island.")
+print("Your mission is to find the treasure.") 
+
+#https://www.draw.io/?lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=Treasure%20Island%20Conditional.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1oDe4ehjWZipYRsVfeAx2HyB7LCQ8_Fvi%26export%3Ddownload
+
+#Write your code below this line 👇
+x=input("Where to go?, Left or Right\n")
+if x =="Left" or x=="left":
+    print("you have encountered a wall, break the wall or climb?\n")
+    y=input("What to do?")
+    if y=="climb" or y=="Climb":
+        print("There's a castle in front of you, walk or rest?\n")
+        y=input()
+        if y=="Rest" or y=="rest":
+            print("you have recovered your energy, walk or rest?\n")
+            y=input()
+            if y=="Walk" or y=="walk":
+                print("you are in the throne room, search or go back?\n")
+                y=input()
+                if y=="Search" or y=="search":
+                    print("You have found a secret room, enter or leave?\n")
+                    y=input()
+                    if y=="Leave" or y=="leave":
+                        print("Congratulations!!, You have slipped on the throne and found the treasure below it!!!\n")
+                    else:
+                        print("You are trapped in the Room!, Game Over!\n")
+                else:
+                    print("You fell into a hole!, Game Over!\n")
+            else:
+                print("You got attacked in your sleep!, Game Over!\n")
+        else:
+            print("A guard saw you and attacked!, Game Over!\n")
+    else:
+        print("The wall fell on you!, Game Over!\n")
+else:
+    print("You got lost!, Game Over!\n")                            
